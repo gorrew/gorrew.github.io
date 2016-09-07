@@ -1,0 +1,119 @@
+body {
+    font-family: sans-serif, serif;
+}
+
+.navbar-default .navbar-brand {
+    color: #3a768f;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #ed9c2d;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #3a768f;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #ed9c2d;
+}
+
+.h1-start-top {
+    font-weight: bold;
+    font-size: 6em;
+    color: #333;
+}
+.h1-start {
+    font-weight: bold;
+    font-size: 2em;
+    color: #000;
+}
+
+.transbox{
+    /*background-color: #eee;
+    border: 1px solid #3a768f;
+    opacity: 0.7;*/
+    margin-top: 200px;
+}
+
+.intro-section-1 {
+    background-image: url("../img/bg-ec-site-2.jpg") !important;
+    height: 100%;
+    padding-top: 150px;
+    text-align: Left;
+    background: #fff;
+}
+
+.bg-test {
+    background-image: url("../img/right-297788_1280.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.intro-container {
+    height: auto;
+    width: auto;
+    padding-left: 90px;
+    padding-right: 90px;
+    /*margin-top: 5px;*/
+    text-align: center;
+    margin-top: 150px;
+}
+
+.intro-container-2 {
+    display: none;
+    height: auto;
+    width: auto;
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.intro-container-3 {
+    height: auto;
+    width: auto;
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-top: 30px;
+    font-size: 5em;
+}
+
+.down-btn-color {
+    color: #333;
+}
+
+.btn:hover {
+    color: #ed9c2d;
+}
+
+.about-ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-box-1 {
+    background: #ed9c2d;
+    border: 5px solid #5da5c3;
+    height: 350px;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.about-box-2 {
+    background: #ecdec3;
+    border: 5px solid #c1c7ca;
+    height: 350px;
+    color: #000;
+    opacity: 0.9;
+}
+
+.about-box-3 {
+    border: 5px solid #e09267;
+    background: #3a768f;
+    height: 350px;
+    color: #ed9c2d;
+    opacity: 0.9;
+}

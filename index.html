@@ -1,129 +1,272 @@
-<!DOCTYPE html>
-<html lang="sv">
-   <head>
-      <meta charset="utf-8">
-       <title>Min Sida</title>
-       
-   </head>
-   <body>
-       <h1 style="color:red;"> Min Sida Vecka 1</h1>
-       <p>Hello World</p>
-       <h1>Lektion 1</h1>
-       <h2>Övning 1</h2>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem iste, nostrum ex, sed quas totam natus laudantium ratione amet accusamus nihil deleniti, ad, molestiae architecto consectetur repudiandae. Tempora, praesentium, id!. <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sit enim quae rerum nesciunt dignissimos nam accusamus blanditiis quasi, vero repellendus! Quos atque eius enim perferendis veritatis quam, vel asperiores?</p>
-        <img src="data:image/png;base64,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" alt="">
-       <br>
-       
-    <a href="google.se">Google</a>
-      
-      
-      
-      <h1>Lektion 2</h1>
-      <h2>Övning 2.1</h2>
-       <div style = "background-color: lightblue;">
-           <h2>Lista</h2>
-           <ol style = "color: violet;">
-               <li>1</li>
-               <li>2</li>
-               <li>3</li>
-               <li>4</li>
-               <li>5</li>
-           </ol>
-           <ul style = "background: green; margin: 10px;">
-               <li>1</li>
-               <li>2</li>
-               <li style= "text-align: center; ">3</li>
-               <li style= "text-align: right;">4</li>
-               <li style= "text-align: center; ">5</li>
-               <li>6</li>
-           </ul>
-           <p>Lorem ipsum dolor sit amet,<b>consectetur adipisicing elit.</b> <br>
-           consectetur adipisicing elit. <em>Quas unde, eaque quos ducimus odio sapiente qui perferendis,</em> <br>
-           <strong>modi omnis</strong> , voluptatum accusamus. Nihil quidem, optio fuga beatae aliquid cupiditate accusantium vel voluptates <br>
-           <u>praesentium molestiae esse sapiente asperiores perferendis ipsam,</u> <i>cum dolores obcaecati qui <u>laboriosam ducimus</u> iusto odio vero nam. Excepturi, aut.</i></p>
-       </div>
-       
-       
-       
-       
-       
-       <h2>Övning 2.2</h2>
-       
-       
-       <table style="border: 5px solid black; width:100%; background: violet;">
-	
-		<tr >
-		 <th style="border: 3px dashed orange;">Ålder</th> <th style="border: 3px dashed orange; background: lightblue;">Längd</th>
-		 <th style="border: 3px dashed orange; background: lightblue;">Vikt</th>
-		 </tr>
-	
-	<tbody style="background: #00FFFF">
-		<tr> <td style="border: 3px dotted black;"> 20 </td> <td style="border: 3px dotted black; background: pink;"> 200</td> <td style="border: 3px dotted black;"> 80 </td> </tr>
-		<tr> <td style="border: 3px dotted black;"> 40 </td> <td style="border: 3px dotted black; background: lightgreen;"> 150 </td> <td style="border: 3px dotted black;"> 90 </td></tr>
-		<tr> <td style="border: 3px dotted black;"> 20 </td> <td style="border: 3px dotted black; background: lightgrey;"> 200</td> <td style="border: 3px dotted black;"> 150 </td></tr>
-		<tr> <td style="border: 3px dotted black;"> 40 </td> <td style="border: 3px dotted black;"> 150 </td> <td style="border: 3px dotted black;"> 50 </td></tr>
-		
-	</tbody>
-	
-	<tfoot>  
-	
-		<tr> <th style="border-top: 5px solid blue;">Total Ålder</th> <th style="border-top: 5px solid blue;"> Total Längd</th> <th style="border-top: 5px solid blue;"> Total Vikt</th></tr>
-	
-		<tr> <td style="border-top: 5px solid red;"> <strong>120</strong></td> <td style="border-top: 5px solid red;"> <em>700</em></td> <td style="border-top: 5px solid red;"> <em>370</em></td></tr>
-	</tfoot>
-</table>
+<!DOCTPE html>
+<html lang="eng">
 
-      
-      
-      <h2>Övning 2.3</h2>
-       
-       
-       <table style="border: 1px solid black;">
-	 
-		<tr >
-		 <th style="border: 2px solid yellow;">Ålder</th> <th style="border: 2px solid green;">Längd</th>
-		 <th style="border: 2px solid yellow;">Vikt</th>
-		 </tr>
-	
-	<tbody>
-		<tr> <td style="border: 1px solid pink;"> 20 </td> <td style="border: 1px solid black;"> 200</td> <td style="border: 1px solid black;"> 80 </td> </tr>
-		<tr> <td style="border: 1px solid black;"> 40 </td> <td style="border: 1px solid black;"> 150 </td> <td style="border: 1px solid black;"> 90 </td></tr>
-		<tr> <td style="border: 1px solid black;"> 20 </td> <td style="border: 1px solid black;"> 200</td> <td style="border: 1px solid black;"> 150 </td></tr>
-		<tr> <td style="border: 1px solid black;"> 40 </td> <td style="border: 1px solid black;"> 150 </td> <td style="border: 1px solid black;"> 50 </td></tr>
-		
-	</tbody>
-	
-	<tfoot>  
-	 
-		<tr> <th style="border-top: 5px solid blue;">Total Ålder</th> <th style="border-top: 5px solid blue;"> Total Längd</th> <th style="border-top: 5px solid blue;"> Total Vikt</th></tr>
-	
-		<tr> <td style="border-top: 5px solid red;"> <strong>120</strong></td> <td style="border-top: 5px solid red;"> <em>700</em></td> <td style="border-top: 5px solid red;"> <em>370</em></td></tr>
-	</tfoot>
-</table>
-       
-       
-       <h2>Övning 3</h2>
-        
-      
-       <div style="background-color: pink; position: relative; display:inline-block; width: 80px; height: 80px;
-        border: 1px solid gray; left: 40px; top: 40px;">1</div>
-        
-        
-        <div style="background-color: lightblue; position: relative; display:inline-block; width: 100px; height: 80px;
-        border: 1px solid gray; left: 120px; top: 40px; z-index: 1;">2
+<head>
+    <meta charset="utf-8">
+    <title>Gordon</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css"> </head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand page-scroll" href="#page-top">EC Frontend</a> </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li> <a class="page-scroll" href="#about">Om sidan</a> </li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Övningar/ Projekt <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li> <a class="page-scroll" href="#services">HTML & CSS</a> </li>
+                            <li> <a class="page-scroll" href="#js">JavaScript</a></li>
+                            <li> <a class="page-scroll" href="#grafik">Grafikprogram</a></li>
+                            <li><a href="#">Interaktions- och gränssnittsdesign</a></li>
+                            <li><a href="#">Kommunikation och projektmetoder </a></li>
+                            <li><a href="#">Server side programmering</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="www.webbtech.se">Egen sida</a></li>
+                        </ul>
+                    </li>
+                    <li> <a class="page-scroll" href="#contact">Kontakt</a> </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="fa fa-github fa-2x" aria-hidden="true" href="https://github.com/gorrew/gorrew.github.io"></a>
+                    </li>
+                    <li>
+                        <a class="fa fa-facebook-official fa-2x" aria-hidden="true" href="https://www.facebook.com/ECUtbildning/"></a>
+                    </li>
+                    <li>
+                        <a class="fa fa-linkedin-square fa-2x" aria-hidden="true" href="https://www.linkedin.com/in/gordonwong86?trk=nav_responsive_tab_profile"></a>
+                    </li>
+                    <li>
+                        <a class="fa fa-slack fa-2x" aria-hidden="true" href="https://slack.com/"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-
-        <div style="background-color: lightgrey; position: relative; width: 160px; height: 80px;
-        border: 1px solid grey; left: 110px; z-index: 2;">3</div>
-       
-       
-       <div style="background-color: #f5ecce; position: relative; width: 100px; height: 160px;
-        border: 1px solid gray; left: 40px; top: -20px;">4</div>
-        
-        <div style="background-color: lightgreen; position: relative; width: 60px; height: 200px; display:inline-block;
-        border: 1px solid gray; left: 180px; top:-270px;">5</div>
-       
-       
-   </body>
+        <!-- /.container -->
+    </nav>
+    <!-- Intro Section -->
+    <section id="intro" class=" intro-section">
+        <div class="intro-container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="h1-start-top">Gordon Wong</h1> </div>
+            </div>
+        </div>
+        <div class="intro-container-2">
+            <div class="row">
+                <div class="col-lg-12"> <a href="#services"><h1 class="h1-start">HTML & CSS</h1></a> <a href="#"><h1 class="h1-start">JavaScript</h1></a> <a href="#"><h1 class="h1-start">Interaktions- och gränssnittsdesign</h1></a> <a href="#"><h1 class="h1-start">Grafikprogram</h1></a> <a href="#"><h1 class="h1-start">Kommunikation och projektmetoder</h1></a> <a href="#"><h1 class="h1-start">Server side programmering</h1></a>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="container transbox">
+            <div class="row">
+                <div class="col-md-3"> <img src="img/HTML5.png" alt=""> </div>
+                <div class="col-md-3"> <img src="img/css.png" alt=""> </div>
+                <div class="col-md-3"> <img src="img/javascript_logo.png" alt=""> </div>
+                <div class="col-md-3"> <img src="img/jquery-logo.png" alt=""> </div>
+            </div>
+        </div>
+        <div class="intro-container-3">
+            <div class="row">
+                <div class="col-lg-12">
+                    <a class="btn fa fa-arrow-down page-scroll down-btn-color" href="#about"> </a>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container-fluid bg-test ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">Om Sidan</h1> </div>
+                    <div class="col-lg-12">
+                        <h3>EC Utbildning inriktning Frontend-utvecklare </h3>
+                        <p>På denna sidan läggs alla övningar och projekt upp under utbildningens gång. Här ska alla kunna se vad vi har gått igenom och villka projekt vi gjort.</p>
+                    </div>
+                    <div class="col-md-4 about-box-1">
+                        <h4 class="page-header">Om Utbildningen</h4>
+                        <p>Med denna YH-utbildning kommer du snabbt i kontakt med arbetslivet och lär dig det senaste inom frontend. Då kraven på kunskap inom JavaScript blir allt större fokuserar utbildningen på strukturerad programutveckling. Det räcker i dagsläget inte bara med att kunna CSS och jQuery för att lyckas som frontend utvecklare. God förståelse för design och användarvänlighet är också värdefullt, och gedigna färdigheter inom programmering blir allt viktigare i takt med att webbläsare börjar användas som en seriös programmeringsplattform.</p>
+                    </div>
+                    <div class="col-md-4 about-box-2">
+                        <h4 class="page-header">Våra Kurser</h4>
+                        <ul class="about-ul">
+                            <li>Examensarbete 40 p</li>
+                            <li>Grafikprogram 10 p</li>
+                            <li>HTML och CSS 30 p</li>
+                            <li>Interaktions- och gränssnittsdesign 25 p</li>
+                            <li>JavaScript 1 45 p</li>
+                            <li>JavaScript 2 40 p</li>
+                            <li>JavaScript 3 40 p</li>
+                            <li>Karriär 10 p</li>
+                            <li>Kommunikation och projektmetoder 10 p</li>
+                            <li>LIA 1 50 p</li>
+                            <li>LIA 2 60 p</li>
+                            <li>Server side programmering 40 p</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 about-box-3">
+                        <h4 class="page-header">Utbildningens Samarbetspartners</h4>
+                        <ul class="about-ul">
+                            <li>Ajilon Consultants</li>
+                            <li>Avalon Innovation AB</li>
+                            <li>Bokio</li>
+                            <li>Gotit</li>
+                            <li>HiQ</li>
+                            <li>New Minds</li>
+                            <li>Sigma IT & Management</li>
+                            <li>WCOM AB</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12">
+                        <h4 class="page-header">Läs mer om Utbildningen <a href="http://www.ecutbildning.se/utbildningar/frontend-utvecklare">här!</a> </h4> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row" style="color:#fff;">
+                <div class="col-lg-12">
+                    <h1 class="page-header">HTML och CSS<br> </h1> </div>
+                <div class="col-lg-12">
+                    <h3>Lektion, Övningar & Projekt</h3>
+                    <p>Här finns vad vi har gått igenom under lektionerna samt övninarna och projekten vi gjort.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="list-group">
+                        <h2 class="page-header">Lektion</h2>
+                        <a href="document/01%20HTML%20intro.pptx" download="" class="list-group-item">
+                            <h4 class="list-group-item-heading">Kursintroduktion. HTML och HTML5.</h4>
+                            <p class="list-group-item-text">Lektion 1, finns att ladda ner! </p>
+                        </a>
+                        <a href="document/02%20HTML-element.pptx" download="" class="list-group-item">
+                            <h4 class="list-group-item-heading">Vanliga element i HTML.</h4>
+                            <p class="list-group-item-text">Lektion 2, finns att ladda ner! </p>
+                        </a>
+                        <a href="document/03%20DOM%20och%20selektorer.pptx" download="" class="list-group-item">
+                            <h4 class="list-group-item-heading">Styla HTML. Tabeller.</h4>
+                            <p class="list-group-item-text">Lektion 3, finns att ladda ner! </p>
+                        </a>
+                        <a href="document/03%20DOM%20och%20selektorer.pptx" download="" class="list-group-item">
+                            <h4 class="list-group-item-heading">DOM och CSS. Positionering.</h4>
+                            <p class="list-group-item-text">Lektion 4, finns att ladda ner! samma som lektion 3</p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">Formulär, HTML5, felsökning.</h4>
+                            <p class="list-group-item-text">Lektion 5, finns att ladda ner! </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="list-group">
+                        <h2 class="page-header">Övningar</h2>
+                        <a href="html-css-1.html" class="list-group-item">
+                            <h4 class="list-group-item-heading">Övning 1</h4>
+                            <p class="list-group-item-text">Klicka för att se resultat</p>
+                        </a>
+                        <a href="html-css-2.html" class="list-group-item">
+                            <h4 class="list-group-item-heading">Övning 2</h4>
+                            <p class="list-group-item-text">Klicka för att se resultat</p>
+                        </a>
+                        <a href="html-css-3.html" class="list-group-item">
+                            <h4 class="list-group-item-heading">Övning 3</h4>
+                            <p class="list-group-item-text">Klicka för att se resultat</p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">Övning 4</h4>
+                            <p class="list-group-item-text">Klicka för att se resultat</p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">Övning 5</h4>
+                            <p class="list-group-item-text">Klicka för att se resultat</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="list-group">
+                        <h2 class="page-header">Projekt</h2>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">Projekt 1</h4>
+                            <p class="list-group-item-text">Klicka för att se resultat</p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">Projekt 2</h4>
+                            <p class="list-group-item-text">Klicka för att se resultat</p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">Projekt 3</h4>
+                            <p class="list-group-item-text">Klicka för att se resultat</p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">Projekt 4</h4>
+                            <p class="list-group-item-text">Klicka för att se resultat</p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">Projekt 5</h4>
+                            <p class="list-group-item-text">Klicka för att se resultat</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
+    <!-- js Section -->
+    <section id="js" class="js-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>JavaScript</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Grafik Section -->
+    <section id="grafik" class="grafik-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Grafik</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Kontakt</h1> </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <script src="js/jquery-3.1.0.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/scrolling-nav.js"></script>
+    </footer>
+</body>
+
 </html>
