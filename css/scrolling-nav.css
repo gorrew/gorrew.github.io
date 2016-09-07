@@ -35,8 +35,8 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 90px;
     text-align: center;
-    background-image: url("../img/bg-ec-site-2.jpg") !important;
-    /*background-image: url("../img/arrow-2.jpg") !important;*/
+    /*background-image: url("../img/bg-ec-site-2.jpg") !important;*/
+    background-image: url("../img/arrow-2.jpg") !important;
     background: #fff;
      background-size: cover;
     background-position: center;
