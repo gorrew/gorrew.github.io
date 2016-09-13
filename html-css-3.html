@@ -3,7 +3,43 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Min Sida</title>
+    <title>tabbel & Position</title>
+    
+    <style>
+        .table{
+            height: 350px;
+            width: 420px;
+            background-color: aquamarine;
+            border: 2px solid gray;
+            padding: 3px;
+        }
+        .title {
+            border-bottom: 1px solid black;
+            height: 50px;
+            padding: 2px;
+        }
+        .titlebox{
+            height: 45px;
+            width: 100px;
+            border-right: 1px solid black;
+            display: inline-block;
+            text-align: center;
+        }
+        .titlebox-last{
+            height: 45px;
+            width: 100px;
+            display: inline-block;
+            text-align: center;
+        }
+        .rowbox{
+            margin-top: 5px;
+            height: 45px;
+            width: 100px;
+            border: 1px solid black;
+            display: inline-block;
+            background-color: aliceblue
+        }
+    </style>
 </head>
 
 <body>
@@ -18,6 +54,46 @@
         border: 1px solid gray; left: 40px; top: -20px;">4</div>
     <div style="background-color: lightgreen; position: relative; width: 60px; height: 200px; display:inline-block;
         border: 1px solid gray; left: 180px; top:-270px;">5</div>
+        
+        <h2>Övning 3.3</h2>
+        <div class="table">
+        <div class="title">
+            <div class="titlebox">Name</div>
+            <div class="titlebox">Sex</div>
+            <div class="titlebox">Phone nr</div>
+            <div class="titlebox-last">Hobby</div>
+        </div>
+        <div class="1">
+            <div class="rowbox">Gordon</div>
+            <div class="rowbox">M</div>
+            <div class="rowbox">123</div>
+            <div class="rowbox">none</div>
+        </div>
+        <div class="2">
+            <div class="rowbox">Alf</div>
+            <div class="rowbox">M</div>
+            <div class="rowbox">4123</div>
+            <div class="rowbox">Football</div>
+        </div>
+        <div class="3">
+            <div class="rowbox">Selma</div>
+            <div class="rowbox">F</div>
+            <div class="rowbox">123</div>
+            <div class="rowbox">cakes</div>
+        </div>
+        <div class="4">
+            <div class="rowbox">Arman</div>
+            <div class="rowbox">M</div>
+            <div class="rowbox">666</div>
+            <div class="rowbox">Ladies Football</div>
+        </div>
+        <div class="5">
+            <div class="rowbox">Bruce</div>
+            <div class="rowbox">M</div>
+            <div class="rowbox">852</div>
+            <div class="rowbox">Fighting</div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,58 @@
+
+/*
+Video & Audio css
+*/
+.va-section{
+text-align: center;
+    background-color: gray;
+	
+}
+.video{
+    border: 2px solid silver;
+    padding: 5px;
+    background-color: black;
+    display: inline-block;
+}
+
+.audio{
+    border: 2px solid silver;
+    padding: 5px;
+    display: inline-block;
+    background-color: black;
+}
+
+/*end of video & audio css*/
+
+
+ body {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .main-nav {
+            border: 1px solid silver;
+            text-align: center;
+            list-style: none;
+            height: 5em;
+            width: 100%;
+        }
+        
+        ul {
+            margin-top: 30px;
+        }
+        
+        main-nav,
+        ul li {
+            display: inline;
+            margin: 5px;
+            font-weight: bold;
+        }
+        
+        main-nav,
+        nav-div,
+        ul li a {
+            color: black;
+            padding: 15px;
+            border: 1px solid silver;
+            text-decoration: none;
+
