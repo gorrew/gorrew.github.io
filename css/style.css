@@ -38,7 +38,6 @@ body {
 }
 
 .intro-section-1 {
-    background-image: url("../img/bg-ec-site-2.jpg") !important;
     height: 100%;
     padding-top: 150px;
     text-align: Left;
@@ -46,7 +45,8 @@ body {
 }
 
 .bg-test {
-    background-image: url("../img/right-297788_1280.png");
+    background-color: #eee;
+    /*background-image: url("../img/right-297788_1280.png");*/
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
