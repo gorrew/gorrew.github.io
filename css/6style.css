@@ -33,3 +33,53 @@ img {
     padding: 5px;
     border: 1px solid black;
 }
+
+.flex-box{
+    border: 1px solid darkgray; 
+    background-color: beige;
+    display: flex; 
+    flex-direction: row;
+    flex: 1 1 auto;
+    height: 600px;
+}
+.head-div{
+    border: 1px solid darkgray; 
+    background-color: beige;
+    flex: 0 0 auto;
+    text-align: center;
+    color: black;
+    font-size: 2em;
+}
+.nav-div{
+    flex: 1 1 auto;
+    border: 1px solid darkgray; 
+    background-color: aqua;
+    text-align: center;
+    color: black;
+    font-size: 2em;
+}
+.article-div{
+    flex: 3 1 auto;
+    border: 1px solid darkgray;
+    background-color: cadetblue;
+    text-align: center;
+    color: black;
+    font-size: 2em;
+}
+
+.aside-div{
+    flex: 1 1 auto;
+    border: 1px solid darkgray; 
+    background-color:cornflowerblue;
+    text-align: center;
+    color: black;
+    font-size: 2em;
+}
+.footer-div{
+    flex: 0 0 5em;
+    border: 1px solid darkgray; 
+    background-color: beige;
+    text-align: center;
+    color: black;
+    font-size: 2em;
+}
