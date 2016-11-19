@@ -1,20 +1,24 @@
-<!DOCTPE html>
-<html lang="eng">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <title>Gordon</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/scrolling-nav.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.css"> </head>
+    <link href="css/font-awesome.css" rel="stylesheet"> </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand page-scroll" href="#page-top">EC Frontend</a> </div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand page-scroll" href="#page-top">Gordon Front-end Developer</a> </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
@@ -22,20 +26,9 @@
                     <li class="hidden">
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
-                    <li> <a class="page-scroll" href="#about">Om sidan</a> </li>
-                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Övningar/ Projekt <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li> <a class="page-scroll" href="#services">HTML & CSS</a> </li>
-                            <li> <a class="page-scroll" href="#js">JavaScript</a></li>
-                            <li> <a class="page-scroll" href="#grafik">Grafikprogram</a></li>
-                            <li><a href="#">Interaktions- och gränssnittsdesign</a></li>
-                            <li><a href="#">Kommunikation och projektmetoder </a></li>
-                            <li><a href="#">Server side programmering</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="www.webbtech.se">Egen sida</a></li>
-                        </ul>
-                    </li>
-                    <li> <a class="page-scroll" href="#contact">Kontakt</a> </li>
+                    <li> <a class="page-scroll" href="#about">About</a> </li>
+                    <li> <a class="page-scroll" href="#exercises">Exercises</a> </li>
+                    <li> <a class="page-scroll" href="#contact">Contact</a> </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
@@ -57,218 +50,449 @@
         <!-- /.container -->
     </nav>
     <!-- Intro Section -->
-    <section id="intro" class=" intro-section">
-        <div class="intro-container">
+    <section id="intro" class="intro-section">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="h1-start-top">Gordon Wong</h1> </div>
-            </div>
-        </div>
-        <div class="intro-container-2">
-            <div class="row">
-                <div class="col-lg-12"> <a href="#services"><h1 class="h1-start">HTML & CSS</h1></a> <a href="#"><h1 class="h1-start">JavaScript</h1></a> <a href="#"><h1 class="h1-start">Interaktions- och gränssnittsdesign</h1></a> <a href="#"><h1 class="h1-start">Grafikprogram</h1></a> <a href="#"><h1 class="h1-start">Kommunikation och projektmetoder</h1></a> <a href="#"><h1 class="h1-start">Server side programmering</h1></a>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-        <div class="container transbox">
-            <div class="row">
-                <div class="col-md-3"> <img src="img/HTML5.png" alt=""> </div>
-                <div class="col-md-3"> <img src="img/css.png" alt=""> </div>
-                <div class="col-md-3"> <img src="img/javascript_logo.png" alt=""> </div>
-                <div class="col-md-3"> <img src="img/jquery-logo.png" alt=""> </div>
-            </div>
-        </div>
-        <div class="intro-container-3">
-            <div class="row">
-                <div class="col-lg-12">
-                    <a class="btn fa fa-arrow-down page-scroll down-btn-color" href="#about"> </a>
-                    <p></p>
+                <div class="col-lg-12 col-md-12 col-sm-12 intro-presentation">
+                    <div class="col-md-6 intro-div-1">
+                        <h1>Hello People!</h1>
+                        <h3>-Instruction: </h3>
+                        <p>I'm <strong>Gordon</strong> a Junior Front-end Developer, currently living and working in Gothenburg. This site contains all my school work from EC Utbildning Göteborg, Frontend-utvecklare.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h1>About this site</h1> <a class="btn" href="#about"><i class="fa fa-info" aria-hidden="true"></i><br>Click Here</a></div>
                 </div>
             </div>
         </div>
     </section>
     <!-- About Section -->
     <section id="about" class="about-section">
-        <div class="container-fluid bg-test ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">Om Sidan</h1> </div>
-                    <div class="col-lg-12">
-                        <h3>EC Utbildning inriktning Frontend-utvecklare </h3>
-                        <p>På denna sidan läggs alla övningar och projekt upp under utbildningens gång. Här ska alla kunna se vad vi har gått igenom och villka projekt vi gjort.</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 about-box">
+                    <h1>About</h1>
+                    <p>(Some of the text will be in Swedish!)</p>
+                    <div class="col-md-6">
+                        <div class=" about-box-1">
+                            <h3><strong>This website</strong></h3>
+                            <p>This website contains all my school work from EC Utbildning Göteborg, Frontend-utvecklare. All the exercises and projects can be found here. If you like what you see, read more about the School and their teachers here.
+                                <br> About our school <a href="http://www.ecutbildning.se/utbildningar/frontend-utvecklare">click here</a>
+                                <br> About our teacher <a href="http://www.ecutbildning.se/utbildningar/frontend-utvecklare">click here</a> </p>
+                        </div>
                     </div>
-                    <div class="col-md-4 about-box-1">
-                        <h4 class="page-header">Om Utbildningen</h4>
-                        <p>Med denna YH-utbildning kommer du snabbt i kontakt med arbetslivet och lär dig det senaste inom frontend. Då kraven på kunskap inom JavaScript blir allt större fokuserar utbildningen på strukturerad programutveckling. Det räcker i dagsläget inte bara med att kunna CSS och jQuery för att lyckas som frontend utvecklare. God förståelse för design och användarvänlighet är också värdefullt, och gedigna färdigheter inom programmering blir allt viktigare i takt med att webbläsare börjar användas som en seriös programmeringsplattform.</p>
+                    <div class="col-md-6">
+                        <div class=" about-box-2">
+                            <h3>EC Frontend-utvecklare</h3>
+                            <p>Med YH-utbildning kommer du snabbt i kontakt med arbetslivet och lär dig det senaste inom frontend. Kraven på kunskap inom JavaScript blir allt större, det räcker i dagsläget inte bara med att kunna CSS och jQuery för att lyckas som frontend utvecklare. God förståelse för design och användarvänlighet är också värdefullt, och programmering blir allt viktigare i takt med att webbläsare börjar användas som en seriös programmeringsplattform.</p>
+                        </div>
                     </div>
-                    <div class="col-md-4 about-box-2">
-                        <h4 class="page-header">Våra Kurser</h4>
-                        <ul class="about-ul">
-                            <li>Examensarbete 40 p</li>
-                            <li>Grafikprogram 10 p</li>
-                            <li>HTML och CSS 30 p</li>
-                            <li>Interaktions- och gränssnittsdesign 25 p</li>
-                            <li>JavaScript 1 45 p</li>
-                            <li>JavaScript 2 40 p</li>
-                            <li>JavaScript 3 40 p</li>
-                            <li>Karriär 10 p</li>
-                            <li>Kommunikation och projektmetoder 10 p</li>
-                            <li>LIA 1 50 p</li>
-                            <li>LIA 2 60 p</li>
-                            <li>Server side programmering 40 p</li>
-                        </ul>
+                    <div class="col-md-6">
+                        <div class="about-box-3">
+                            <h3><strong>Frontend Courses</strong></h3>
+                            <p> Examensarbete 40p
+                                <br>Grafikprogram10p
+                                <br>HTML och CSS 30p
+                                <br>Interaktions- och gränssnittsdesign 25p
+                                <br> JavaScript 1 45p, JavaScript 2 40p, JavaScript 3 40p
+                                <br>Karriär 10p
+                                <br> Kommunikation och projektmetoder 10p
+                                <br>LIA 1 50p, LIA 2 60p
+                                <br>Server side programmering 40p </p>
+                        </div>
                     </div>
-                    <div class="col-md-4 about-box-3">
-                        <h4 class="page-header">Utbildningens Samarbetspartners</h4>
-                        <ul class="about-ul">
-                            <li>Ajilon Consultants</li>
-                            <li>Avalon Innovation AB</li>
-                            <li>Bokio</li>
-                            <li>Gotit</li>
-                            <li>HiQ</li>
-                            <li>New Minds</li>
-                            <li>Sigma IT & Management</li>
-                            <li>WCOM AB</li>
-                        </ul>
+                    <div class="col-md-6">
+                        <div class="about-box-4">
+                            <h3>Utbildningens Samarbetspartners</h3>
+                            <p>Ajilon Consultants
+                                <br>Avalon Innovation AB
+                                <br>Bokio
+                                <br>Gotit
+                                <br>HiQ
+                                <br>New Minds
+                                <br>Sigma IT & Management
+                                <br>WCOM AB</p>
+                        </div>
                     </div>
-                    <div class="col-lg-12">
-                        <h4 class="page-header">Läs mer om Utbildningen <a href="http://www.ecutbildning.se/utbildningar/frontend-utvecklare">här!</a> </h4> </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Services Section -->
-    <section id="services" class="services-section">
-        <div class="container">
+    <section id="exercises" class="services-section">
+        <div class="container-fluid">
             <div class="row">
-                <h1 class="page-header">HTML och CSS<br> </h1>
-                <div class="col-md-12">
-                    <h3>Lektion, Övningar & Projekt</h3>
-                    <p>Här finns vad vi har gått igenom under lektionerna samt övninarna och projekten vi gjort.
-                        <br> Lärare <strong>David Andersson</strong>
-                        <br>Dokument och övningar från <strong>David Andersson</strong></p>
-                    <div class=" col-md-3">
-                        <div class="thumbnail"> <img src="..." alt="...">
-                            <div class="caption">
-                                <h3>Övning 1</h3>
-                                <p>Du kan kolla resultatet och även ladda ner dokumentet för övningarna </p>
-                                <p><a href="/html-css-1.html" class="btn btn-primary" role="button" target="_blank">Resultat</a> <a href="/document/01%20HTML%20intro.pptx" class="btn btn-default" role="button">Dokument 1</a></p>
+                <div class="col-lg-12 col-md-12 col-sm-12 exercise-box">
+                    <h1>Exercises</h1>
+                    <div class="col-md-4">
+                        <div class="html-css-box-1">
+                            <h3>HTML & CSS</h3>
+                            <div class="panel-group" id="accordion1">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_1">Exercise 1</a>
+            </h5> </div>
+             <div id="accordion1_1" class="panel-collapse collapse ">
+                    <div class="panel-body">
+                                            <p>Here you can see the result of the exercise and download the exercise slides</p>
+                                             
+                                            <a href="/document/01%20HTML%20intro.pptx" class="btn btn-default" role="button">Slide 1</a> 
+                                            <a href="/html-css-1.html" class="btn btn-default" role="button">Result</a> 
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_2">Exercise 2</a>
+            </h5> </div>
+                                    <div id="accordion1_2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Here you can see the result of the exercise and download the exercise slides</p>
+                                             
+                                            <a href="/document/02%20HTML-element.pptx" class="btn btn-default" role="button">Slide 2</a> 
+                                            <a href="/html-css-2.html" class="btn btn-default" role="button">Result</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_3">Exercise 3</a>
+            </h5> </div>
+                                    <div id="accordion1_3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Here you can see the result of the exercise and download the exercise slides</p>
+                                             
+                                            <a href="/document/02%20HTML-element.pptx" class="btn btn-default" role="button">Slide 2</a> 
+                                            <a href="/html-css-3.html" class="btn btn-default" role="button">Result</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_4">Exercise 4</a>
+            </h5> </div>
+                                    <div id="accordion1_4" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Here you can see the result of the exercise and download the exercise slides</p>
+                                             
+                                            <a href="/document/03%20DOM%20och%20selektorer.pptx" class="btn btn-default" role="button">Slide 3</a> 
+                                            <a href="/html-css-4.html" class="btn btn-default" role="button">Result</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_5">Exercise 5</a>
+            </h5> </div>
+                                    <div id="accordion1_5" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Here you can see the result of the exercise and download the exercise slides</p>
+                                             
+                                            <a href="/document/04%20HTML5-element%20och%20formul%C3%A4r.pptx" class="btn btn-default" role="button">Slide 4</a> 
+                                            <a href="/html-css-5.html" class="btn btn-default" role="button">Result</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_5b">Exercise 5b</a>
+            </h5> </div>
+                                    <div id="accordion1_5b" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Here you can see the result of the exercise and download the exercise slides</p>
+                                             
+                                            <a href="/document/04%20HTML5-element%20och%20formul%C3%A4r.pptx" class="btn btn-default" role="button">Slide 4</a> 
+                                            <a href="/html-css-5b.html" class="btn btn-default" role="button">Result</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_6">Exercise 6</a>
+            </h5> </div>
+                                    <div id="accordion1_6" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Here you can see the result of the exercise and download the exercise slides</p>
+                                             
+                                            <a href="/document/05%20Flexbox.pptx" class="btn btn-default" role="button">Slide 5</a> 
+                                            <a href="/html-css-6.html" class="btn btn-default" role="button">Result</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_7">Exercise 7</a>
+            </h5> </div>
+                                    <div id="accordion1_7" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Here you can see the result of the exercise and download the exercise slides</p>
+                                             
+                                            <a href="/document/06%20Bootstrap.pptx" class="btn btn-default" role="button">Slide 6</a> 
+                                            <a href="/html-css-7.html" class="btn btn-default" role="button">Result</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_8">Project HTML & CSS</a>
+            </h5> </div>
+                                    <div id="accordion1_8" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Here you can see the result of the exercise and download the exercise slides</p>
+                                             
+                                            <a href="/document/ProjektuppgiftHTMLochCSS.docx" class="btn btn-default" role="button">ProjektuppgiftHTMLochCSS</a> 
+                                            <a href="https://robertahlund.github.io/html-css-projekt/" class="btn btn-default" role="button">Result</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class=" col-md-3">
-                        <div class="thumbnail"> <img src="..." alt="...">
-                            <div class="caption">
-                                <h3>Övning 2</h3>
-                                <p>Du kan kolla resultatet och även ladda ner dokumentet för övningarna </p>
-                                <p><a href="/html-css-2.html" class="btn btn-primary" role="button" target="_blank">Resultat</a> <a href="/document/02%20HTML-element.pptx" class="btn btn-default" role="button">Dokument 2</a></p>
+                    <div class="col-md-4">
+                        <div class="html-css-box-2">
+                            <h3>JavaScript 1</h3>
+                            <div class="panel-group" id="accordion2">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#accordion2_1">Exercise 1</a>
+            </h5> </div>
+             <div id="accordion2_1" class="panel-collapse collapse ">
+                    <div class="panel-body">
+                                            <p>Here you can see the result of the exercise and download the exercise slides</p>
+                                             
+                                            <a href="/document/javascript1/01%20intro.pptx" class="btn btn-default" role="button">Slide 1</a> 
+                                            <a href="#" class="btn btn-default" role="button">Result</a> 
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#accordion2_2">Exercise 2</a>
+            </h5> </div>
+                                    <div id="accordion2_2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Here you can see the result of the exercise and download the exercise slides</p>
+                                             
+                                            <a href="/document/javascript1/02%20Program%20structure.pptx" class="btn btn-default" role="button">Slide 2</a> 
+                                            <a href="#" class="btn btn-default" role="button">Result</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#accordion2_3">Exercise 3</a>
+            </h5> </div>
+                                    <div id="accordion2_3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Here you can see the result of the exercise and download the exercise slides</p>
+                                             
+                                            <a href="/document/javascript1/03%20Funktioner%20del%201.pptx" class="btn btn-default" role="button">Slide 3</a> 
+                                            <a href="#" class="btn btn-default" role="button">Result</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#accordion2_4">Exercise 4</a>
+            </h5> </div>
+                                    <div id="accordion2_4" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Here you can see the result of the exercise and download the exercise slides</p>
+                                             
+                                            <a href="/document/javascript1/04%20Funktioner%20del%202.pptx" class="btn btn-default" role="button">Slide 4</a> 
+                                            <a href="#" class="btn btn-default" role="button">Result</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#accordion2_5">Exercise 5</a>
+            </h5> </div>
+                                    <div id="accordion2_5" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Here you can see the result of the exercise and download the exercise slides</p>
+                                             
+                                            <a href="/document/javascript1/05%20Objekt%20och%20arrayer.pptx" class="btn btn-default" role="button">Slide 5</a> 
+                                            <a href="#" class="btn btn-default" role="button">Result</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#accordion2_6">Exercise 6</a>
+            </h5> </div>
+                                    <div id="accordion2_6" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Here you can see the result of the exercise and download the exercise slides</p>
+                                             
+                                            <a href="/document/javascript1/06%20Higher%20order%20functions.pptx" class="btn btn-default" role="button">Slide 6</a> 
+                                            <a href="#" class="btn btn-default" role="button">Result</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#accordion2_7">Exercise 7</a>
+            </h5> </div>
+                                    <div id="accordion2_7" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Here you can see the result of the exercise and download the exercise slides</p>
+                                             
+                                            <a href="/document/javascript1/07%20Prototype.pptx" class="btn btn-default" role="button">Slide 7</a> 
+                                            <a href="#" class="btn btn-default" role="button">Result</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#accordion2_8">Exercise 8</a>
+            </h5> </div>
+                                    <div id="accordion2_8" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Here you can see the result of the exercise and download the exercise slides</p>
+                                             
+                                            <a href="/document/javascript1/08%20DOM.pptx" class="btn btn-default" role="button">Slide 8</a> 
+                                            <a href="#" class="btn btn-default" role="button">Result</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#accordion2_9">Exercise 9</a>
+            </h5> </div>
+                                    <div id="accordion2_9" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Here you can see the result of the exercise and download the exercise slides</p>
+                                             
+                                            <a href="/document/javascript1/09%20Events.pptx" class="btn btn-default" role="button">Slide 9</a> 
+                                            <a href="#" class="btn btn-default" role="button">Result</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class=" col-md-3">
-                        <div class="thumbnail"> <img src="..." alt="...">
-                            <div class="caption">
-                                <h3>Övning 3</h3>
-                                <p>Du kan kolla resultatet och även ladda ner dokumentet för övningarna </p>
-                                <p><a href="/html-css-3.html" class="btn btn-primary" role="button" target="_blank">Resultat</a> <a href="/document/02%20HTML-element.pptx" class="btn btn-default" role="button">Dokument 2</a></p>
+                    <div class="col-md-4">
+                        <div class="html-css-box-3">
+                            <h3>Other Slides</h3> 
+                            <div class="panel-group" id="accordion3">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion3" href="#accordion3_1">Lab1</a>
+            </h5> </div>
+             <div id="accordion3_1" class="panel-collapse collapse ">
+                    <div class="panel-body">
+                                            <p>Here you can see the result of the exercise and download the exercise slides</p>
+                                             
+                                            <a href="/document/javascript1/Lab1.docx" class="btn btn-default" role="button">Lab 1</a> 
+                                            <a href="#" class="btn btn-default" role="button">Result</a> 
+                                            </div>
+                                    </div>
+                                </div>
+                                   <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion3" href="#accordion3_2">Lab2</a>
+            </h5> </div>
+             <div id="accordion3_2" class="panel-collapse collapse ">
+                    <div class="panel-body">
+                                            <p>Here you can see the result of the exercise and download the exercise slides</p>
+                                             
+                                            <a href="/document/javascript1/Lab2.docx" class="btn btn-default" role="button">Lab 2</a> 
+                                            <a href="#" class="btn btn-default" role="button">Result</a> 
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion3" href="#accordion3_3">Lab3</a>
+            </h5> </div>
+             <div id="accordion3_3" class="panel-collapse collapse ">
+                    <div class="panel-body">
+                                            <p>Here you can see the result of the exercise and download the exercise slides</p>
+                                             
+                                            <a href="/document/javascript1/Lab3.docx" class="btn btn-default" role="button">Lab 3</a> 
+                                            <a href="#" class="btn btn-default" role="button">Result</a> 
+                                            </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                     </div>
                     </div>
-                    <div class=" col-md-3">
-                        <div class="thumbnail"> <img src="..." alt="...">
-                            <div class="caption">
-                                <h3>Övning 4</h3>
-                                <p>Du kan kolla resultatet och även ladda ner dokumentet för övningarna </p>
-                                <p><a href="/html-css-4.html" class="btn btn-primary" role="button" target="_blank">Resultat</a> <a href="/document/03%20DOM%20och%20selektorer.pptx" class="btn btn-default" role="button">Dokument 3</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-md-3">
-                        <div class="thumbnail"> <img src="..." alt="...">
-                            <div class="caption">
-                                <h3>Övning 5</h3>
-                                <p>Du kan kolla resultatet och även ladda ner dokumentet för övningarna </p>
-                                <p><a href="/html-css-5.html" class="btn btn-primary" role="button" target="_blank">Resultat</a> <a href="/document/04%20HTML5-element%20och%20formul%C3%A4r.pptx" class="btn btn-default" role="button">Dokument 4</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-md-3">
-                        <div class="thumbnail"> <img src="..." alt="...">
-                            <div class="caption">
-                                <h3>Övning 5b</h3>
-                                <p>Du kan kolla resultatet och även ladda ner dokumentet för övningarna </p>
-                                <p><a href="/html-css-5b.html" class="btn btn-primary" role="button" target="_blank">Resultat</a> <a href="/document/04%20HTML5-element%20och%20formul%C3%A4r.pptx" class="btn btn-default" role="button">Dokument 4</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-md-3">
-                        <div class="thumbnail"> <img src="..." alt="...">
-                            <div class="caption">
-                                <h3>Övning 6</h3>
-                                <p>Du kan kolla resultatet och även ladda ner dokumentet för övningarna </p>
-                                <p><a href="/html-css-6.html" class="btn btn-primary" role="button" target="_blank">Resultat</a> <a href="/document/05%20Flexbox.pptx" class="btn btn-default" role="button">Dokument 5</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-md-3">
-                        <div class="thumbnail"> <img src="..." alt="...">
-                            <div class="caption">
-                                <h3>Övning 7</h3>
-                                <p>Du kan kolla resultatet och även ladda ner dokumentet för övningarna </p>
-                                <p><a href="/html-css-7.html" class="btn btn-primary" role="button" target="_blank">Resultat</a> <a href="/document/06%20Bootstrap.pptx" class="btn btn-default" role="button">Dokument 6</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-md-6 text-center">
-                        <div class="thumbnail"> <img src="..." alt="...">
-                            <div class="caption">
-                                <h3>Projekt html-css</h3>
-                                <p>Du kan kolla resultatet och även ladda ner dokumentet för projektebeskrivning </p>
-                                <p><a href="https://robertahlund.github.io/html-css-projekt/" class="btn btn-primary" role="button" target="_blank">Resultat</a> <a href="/document/ProjektuppgiftHTMLochCSS.docx" class="btn btn-default" role="button">Projektuppgift</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3"> <img src="img/HTML5.png" alt=""> </div>
-                    <div class="col-md-3"> <img src="img/css.png" alt=""> </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- js Section -->
-    <section id="js" class="js-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>JavaScript</h1> </div>
-            </div>
-        </div>
-    </section>
-    <!-- Grafik Section -->
-    <section id="grafik" class="grafik-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Grafik</h1> </div>
             </div>
         </div>
     </section>
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>Kontakt</h1> </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 contact-box">
+                    <h1>Contact</h1> 
+                     <div class="col-md-6">
+                      <div class="box-1">
+                       <div><i class="fa fa-envelope-o" aria-hidden="true"> Mail: gordon.wong86@gmail.com</i>
+                       </div>
+                       <div>
+                      <i class="fa fa-mobile" aria-hidden="true"> Phone: 0736-744 126</i>
+                       </div>
+                       <div> <i class="fa fa-location-arrow" aria-hidden="true"> Find me:</i> <a href="https://www.google.se/maps/place/M%C3%B6lndalsv%C3%A4gen+77,+412+63+G%C3%B6teborg/@57.6831517,11.9979932,17z/data=!3m1!4b1!4m5!3m4!1s0x464ff3bcaf271121:0x47b6343111d7e209!8m2!3d57.6831517!4d12.0001819">Here</a></div>
+                       </div>
+                       </div>
+                        <div class="col-md-6">
+                        <div class="box-1">
+                        <a href="https://github.com/gorrew/gorrew.github.io"> <i class="fa fa-github fa-2x" aria-hidden="true"></i>Github</a>
+                        <a href="https://github.com/gorrew/gorrew.github.io"> <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>Facebook</a>
+                        <a href="https://github.com/gorrew/gorrew.github.io"> <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>linkedin</a>
+                        <a href="https://github.com/gorrew/gorrew.github.io"> <i class="fa fa-slack fa-2x" aria-hidden="true"></i>Slack</a>
+                    
+                            </div>
+                    </div>
+                    
+                    <!--<div id="map" style="width:100%;height:300px"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), 
+    zoom: 10
+  }
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>-->
+                    </div>
+                    
+                   
+                    </div>
             </div>
         </div>
     </section>
-    <footer>
-        <script src="js/jquery-3.1.0.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.easing.min.js"></script>
-        <script src="js/scrolling-nav.js"></script>
-    </footer>
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
 </body>
 
 </html>

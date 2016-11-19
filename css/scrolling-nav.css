@@ -7,6 +7,7 @@
 body {
     width: 100%;
     height: 100%;
+    color:#000;
 }
 
 html {
@@ -32,11 +33,12 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
-    height: 100%;
-    padding-top: 90px;
+    
+    padding-top: 7%;
+    padding-bottom: 18%;
     text-align: center;
-    background-image: url("../img/bg-ec-site-2.jpg") !important;
-    background: #fff;
+    background-image: url(../img/bg-gorrew.io.jpeg)!important;
+    background: #fdfdfd;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -44,39 +46,43 @@ of those sections to manage the look and feel of the site. */
 }
 
 .about-section {
-    height: 100%;
+    /*height: 100%;*/
     padding-top: 5em;
+    padding-bottom:5em;
     text-align: center;
-    /*background: #fff;*/
+    background-color: #fdfdfd;
 }
 
-.services-section {
+.services-section { /*AKA exercise section*/
     /*height: 100%;*/
     padding-top: 5em;
     padding-bottom: 5em;
     text-align: center;
-    background: #3b9adb;
-    color: #fff;
+    background: #fdfdfd;
+}
+
+.contact-section {
+    /*height: 100%;*/
+    padding-top: 5em;
+    padding-bottom: 5em;
+    text-align: center;
+    background: #fceee0;
+    border-top: 20px solid #5b899b;
+    border-bottom: 20px solid #5b899b;
 }
 
 .js-section {
-    height: 100%;
+    /*height: 100%;*/
     padding-top: 5em;
     text-align: center;
     background: #eee;
 }
 
 .grafik-section {
-    height: 100%;
+    /*height: 100%;*/
     padding-top: 5em;
     text-align: center;
     background: #333;
     color: #fff;
 }
 
-.contact-section {
-    height: 100%;
-    padding-top: 5em;
-    text-align: center;
-    background: #fff;
-}
