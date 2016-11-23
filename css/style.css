@@ -51,7 +51,7 @@ color: #5b899b;
 .about-box-1{
     border: 5px solid #fed9b4;
     margin-top: 10px;
-    min-height: 15em;
+    min-height: 300px;
     padding: 10px;
 }
 .about-box-1 > h3{
@@ -62,7 +62,7 @@ color: #5b899b;
 .about-box-2{
     border: 5px solid #5b899b;
     margin-top: 10px;
-    min-height: 15em;
+    min-height: 300px;
     padding: 10px; 
 }
 .about-box-2 h3{
@@ -140,7 +140,7 @@ color: #5b899b;
 }   
 
 .box-1{
-    font-size: 2em;
+    /*font-size: 2em;*/
     color: #5b899b;
     display: inline-block;
     text-align: left;
