@@ -51,7 +51,7 @@ color: #5b899b;
 .about-box-1{
     border: 5px solid #fed9b4;
     margin-top: 10px;
-    height: 15em;
+    min-height: 15em;
     padding: 10px;
 }
 .about-box-1 > h3{
@@ -62,7 +62,7 @@ color: #5b899b;
 .about-box-2{
     border: 5px solid #5b899b;
     margin-top: 10px;
-    height: 15em;
+    min-height: 15em;
     padding: 10px; 
 }
 .about-box-2 h3{
@@ -74,7 +74,7 @@ color: #5b899b;
 .about-box-3{
     border: 5px solid #a2c0cc;
     margin-top: 10px;
-    height: 20em;
+    min-height: 300px;
     padding: 10px; 
 }
 
@@ -87,7 +87,7 @@ color: #5b899b;
 .about-box-4{
     border: 5px solid #d6aa80;
     margin-top: 10px;
-    height: 20em;
+    min-height: 300px;
     padding: 10px;
 }
 .about-box-4 > h3{
