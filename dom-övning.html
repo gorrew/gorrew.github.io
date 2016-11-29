@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head><title>Exercises DOM manipulation</title></head>
-<body>
+<head>
+<title>Exercises DOM manipulation</title>
+</head>
+<body id="body">
 <h3>Time for some DOM manipulation!</h3>
 <p>First, find the element with id="first" using document.getElementById. Next, change its content. Use the property innerHTML.<br>
 <span id="first" style="border: 1px dotted red;">id=first</span>
@@ -35,9 +37,14 @@
 <ol>
   <li>(o) Cats</li>
 </ol>
-
-
+    <h1>Övriga Övningar</h1>
+    <h2>2: Ny console.log</h2>
 <pre>Hej</pre>
+
+<h2>3: Manipulera HTML-listor</h2>
+<h3>3.1 addToHtmlList</h3>
+<p>
+Skriv en funktion som lägger till saker till en HTML-lista. (ul eller ol) Funktionen ska ha listans id som parameter.
 
 <ul id="ulList">
     <li>1</li>
@@ -45,11 +52,52 @@
     <li>3</li>
 </ul>
 
+
+<h3>3.2 reverseHtmlList</h3>
+<p>
+Skriv en funktion som vänder upp och ner på en HTML-lista. Använd removeChild och appendChild eller replaceChild.
+
+</p>
 <ul id="ulListReverse">
     <li>1</li>
     <li>2</li>
     <li>3</li>
 </ul>
+
+
+
+<h3>3.3 VG: moveElement</h3>
+<p> 
+Skriv en funktion som flyttar det första elementet i en lista och lägger det sist i en annan lista.
+Exempel: moveElement(originListId, destinationListId)
+Tips: element.firstChild är en property som ger det första barnet till ett element.</p>
+
+
+<h4>List 1</h4>
+<ul id="f">
+    <li>1 Ska flyttas från list1 till List2</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+
+<h4>List 2</h4>
+<ul id="s">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+
+<h3>3.4 VG: createTableFromList
+</h3>
+<p>Skriv en funktion som lägger in en lista med text (eller HTML) i en tabell.
+createTableFromList(parentElementId, itemsPerRow, list)</p>
+<ul id="first-f">
+</ul>
+<ul id="second-s">
+</ul>
+
+
+
 <script src="js/DOM.ex.js"></script>
 </body>
 </html>
