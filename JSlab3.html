@@ -47,9 +47,17 @@
            <button id="ifj" class="btn-right">Import from JSON</button><br>
        </div>
        
-       <div class="colors">
-           
-       </div>
+       <form class = "color-form">
+  <select name="colors" id="color">
+   <option value="#000000" selected="" disabled="">Choose color</option>
+    <option value="#efad04">Orange</option>
+    <option value="#3bff00">Green</option>
+    <option value="#0037ff">Blue</option>
+    <option value="#a5a5a5">Grey</option>
+  </select>
+  <input type="text" name ="input-color" id="input-color" placeholder="add rgb or hexa color">
+  <button id="add-color" class="add-color-btn" type="button">Add Your Color</button>
+</form>
        <div id="status">
            <div class="status-bar"><h3>Info</h3>
            <p id="wtd" class="wtd">What to do? Hover over the buttons and follow the instustions.</p>

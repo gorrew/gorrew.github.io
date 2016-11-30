@@ -4,6 +4,17 @@ let wtd = document.getElementById('wtd');
 canvas.width = 600;
 canvas.height = 400;
 
+let selectColor = document.getElementById('color');
+
+function getColor(){
+    let c = document.getElementById('color').value;
+    return c;
+}
+
+selectColor.addEventListener('change', function(event){
+    context.strokeStyle = getColor();
+})
+
 let dt = document.getElementById('dt');
 dt.addEventListener('click', function(event){
     drawT();
@@ -15,9 +26,8 @@ dt.addEventListener('mouseover',function(event){
 
 let drawT = function(){
     let click = 0;
-canvas.addEventListener('click', function(event) {
+    canvas.addEventListener('click', function(event) {
     let rect = canvas.getBoundingClientRect();
-    
     click++;
     
     if (click === 1) {
@@ -129,14 +139,10 @@ cc.addEventListener('click', function(event){
 })
 
 
-
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
 function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+ document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
 
