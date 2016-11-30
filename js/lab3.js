@@ -1,10 +1,22 @@
 let canvas = document.getElementById('canvas');
 let context = canvas.getContext('2d');
-let wtd = document.getElementById('wtd');
 canvas.width = 600;
 canvas.height = 400;
-
+let wtd = document.getElementById('wtd');
 let selectColor = document.getElementById('color');
+let inputColor = document.getElementById('input-color');
+let addColor = document.getElementById('add-color'); 
+let hexColors = '^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$';
+let userHex;
+
+addColor.addEventListener('click',function(event){
+        userHex = inputColor.value.toLowerCase();
+        let newOption = document.createElement('option');
+        newOption.value = userHex;
+        newOption.innerHTML = userHex;
+        selectColor.appendChild(newOption);
+        wtd.innerHTML ="Color Added To List";
+})
 
 function getColor(){
     let c = document.getElementById('color').value;
