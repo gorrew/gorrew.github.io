@@ -1,5 +1,6 @@
 let canvas = document.getElementById('canvas');
 let context = canvas.getContext('2d');
+let wtd = document.getElementById('wtd');
 canvas.width = 600;
 canvas.height = 400;
 
@@ -7,6 +8,10 @@ let dt = document.getElementById('dt');
 dt.addEventListener('click', function(event){
     drawT();
 });
+
+dt.addEventListener('mouseover',function(event){
+    wtd.innerHTML = "Draw Triangle with three clicks on the canvas";
+})
 
 let drawT = function(){
     let click = 0;
@@ -21,6 +26,7 @@ canvas.addEventListener('click', function(event) {
         context.fillRect(x1, y1, 1, 1);
         context.beginPath();
         context.moveTo(x1, y1);
+        wtd.innerHTML = "Two more clicks to finnish a triangle";
     } 
     
     if (click === 2) {
@@ -28,6 +34,7 @@ canvas.addEventListener('click', function(event) {
         y2 = (event.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height;
         context.fillRect(x2, y2, 1, 1);
         context.lineTo(x2, y2);
+        wtd.innerHTML = "One more click now!";
     }
     
     if (click === 3) {
@@ -37,6 +44,7 @@ canvas.addEventListener('click', function(event) {
         context.lineTo(x3, y3);
         context.closePath();
         context.stroke();
+        wtd.innerHTML = "There you go!";
     }
 });
 }
@@ -46,9 +54,12 @@ dr.addEventListener('click', function(event){
     drawR();
 });
 
+dr.addEventListener('mouseover', function(event){
+    wtd.innerHTML = "Draw Rectangle with two clicks on the canvas";
+})
 let drawR = function(){
-    let click = 0;
-    canvas.addEventListener('click', function(event){
+        let click = 0;
+        canvas.addEventListener('click', function(event){
         let rect = canvas.getBoundingClientRect();
         click++;
         
@@ -56,13 +67,15 @@ let drawR = function(){
         x1 = (event.clientX - rect.left) / (rect.right - rect.left) * canvas.width;
         y1 = (event.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height;
         context.fillRect(x1, y1, 1, 1);
-        context.beginPath();    
+        context.beginPath();
+        wtd.innerHTML = "One more click now!";
         }
         if (click === 2) {
         x2 = (event.clientX - rect.left) / (rect.right - rect.left) * canvas.width;
         y2 = (event.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height;
         context.rect(x1,y1,x2-x1,y2-y1);
-        context.stroke(); 
+        context.stroke();   
+        wtd.innerHTML = "There you go!";
     }
     })
 }
@@ -71,24 +84,32 @@ dc.addEventListener('click', function(event){
     drawC();
 });
 
+dc.addEventListener('mouseover', function(event){
+    wtd.innerHTML = "Draw a circle with two clicks!";
+    
+})
+
 let drawC = function(){
     let click = 0;
     canvas.addEventListener('click', function(event){
      let rect = canvas.getBoundingClientRect();
         click++;
+        
         if (click === 1){
             x1 = (event.clientX - rect.left) / (rect.right - rect.left) * canvas.width;
         y1 = (event.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height;
         context.fillRect(x1, y1, 1, 1);
-        context.beginPath();  
+        context.beginPath(); 
+        wtd.innerHTML = "One more click now!";    
         }
+        
        if (click === 2) {
-          
         x2 = (event.clientX - rect.left) / (rect.right - rect.left) * canvas.width;
         y2 = (event.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height;
         let r = Math.sqrt(Math.pow((x2 - x1),2) +Math.pow((y2 -y1),2));   
         context.arc(x1,y1,r,0,2*Math.PI);
         context.stroke();
+        wtd.innerHTML = "There you go!";   
        }
     })
 }
@@ -106,3 +127,26 @@ cc.addEventListener('click', function(event){
     let wtd = document.getElementById('wtd');
     wtd.innerHTML = "Done!"
 })
+
+
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
