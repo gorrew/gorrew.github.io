@@ -22,7 +22,7 @@ window.addEventListener('load', function (event) {
                     wtd.innerHTML = "Enter Color"; 
                 })*/
             let okColor = false;
-            inputColor.addEventListener('keyup', function (event) {
+            inputColor.addEventListener('keypress', function (event) {
                     if (inputColor.value.match(hexColors) !== null) {
                         okColor = true;
                         wtd.innerHTML = "valid color";
@@ -41,6 +41,7 @@ window.addEventListener('load', function (event) {
                         newOption.innerHTML = userHex;
                         selectColor.appendChild(newOption);
                         wtd.innerHTML = "Color Added To List";
+                        okColor = false;
                     }
                     else {
                         wtd.innerHTML = "NO NO NO"
