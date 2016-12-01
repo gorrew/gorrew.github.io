@@ -5,7 +5,7 @@ canvas.height = 400;
 let wtd = document.getElementById('wtd');
 let selectColor = document.getElementById('color');
 let inputColor = document.getElementById('input-color');
-let addColor = document.getElementById('add-color'); 
+let addColor = document.getElementById('add-color');    
 let hexColors = '^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$';
 let userHex;
 
@@ -19,15 +19,32 @@ dp.addEventListener('mouseover', function(event){
     wtd.innerHTML = "Sorry! Draw Polygon Doesn't Work Yet!";
 })
 
-
+/*inputColor.addEventListener('mouseover', function(event){
+    wtd.innerHTML = "Enter Color"; 
+})*/
+let okColor=false;
+inputColor.addEventListener('keyup',function(event){
+    if(inputColor.value.match(hexColors) !== null){
+        okColor = true;
+        wtd.innerHTML ="valid color";
+    }
+    else if (inputColor.value == null || inputColor.value==""){
+        okColor = false;
+        wtd.innerHTML="Not Valid";
+    }
+})
 // Add Color to list
 addColor.addEventListener('click',function(event){
+    if (okColor === true){
         userHex = inputColor.value.toLowerCase();
         let newOption = document.createElement('option');
         newOption.value = userHex;
         newOption.innerHTML = userHex;
         selectColor.appendChild(newOption);
-        wtd.innerHTML ="Color Added To List";
+        wtd.innerHTML ="Color Added To List";}
+    else {
+        wtd.innerHTML = "NO NO NO"
+    }
 })
 
 //Choose Color from list
@@ -175,7 +192,6 @@ function cancelBtn(funC){
 })
     
 }
-    
 
 //Menu
 function myFunction() {
