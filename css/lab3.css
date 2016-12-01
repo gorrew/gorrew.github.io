@@ -131,6 +131,20 @@ body{
     margin: 1px;
     border-radius: 4px;
 }
+.jsondata{
+   padding:5px;
+    color: #fff;
+    background-color: #000;
+    float: right;
+    border: 1px solid black;
+    min-height: 300px;
+    width: 300px;
+    margin-right: 20px;
+}
+.jsontext{
+    padding: 5px;
+    color: #fff
+}
 .status-bar{
     padding:5px;
     color: red;

@@ -9,6 +9,8 @@ window.addEventListener('load', function (event) {
             let addColor = document.getElementById('add-color');
             let hexColors = '^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$';
             let userHex;
+            let jsonObj = [];
+    
             //Not working buttons
             let ifj = document.getElementById('ifj');
             ifj.addEventListener('mouseover', function (event) {
@@ -18,19 +20,39 @@ window.addEventListener('load', function (event) {
             dp.addEventListener('mouseover', function (event) {
                     wtd.innerHTML = "Sorry! Draw Polygon Doesn't Work Yet!";
                 })
-                /*inputColor.addEventListener('mouseover', function(event){
-                    wtd.innerHTML = "Enter Color"; 
-                })*/
-            let okColor = false;
-            inputColor.addEventListener('keypress', function (event) {
+            
+            //Json
+            let etj = document.getElementById('etj');
+            let jsonText = document.getElementById('jsonText');
+            etj.addEventListener('mouseover', function(event){
+                wtd.innerHTML ="Click to get JSON";
+            }); 
+    
+            etj.addEventListener('click', function(event){
+                
+                let text ="";
+                for(i = 0; i < jsonObj.length; i++){
+                  let jsobjs = JSON.stringify(jsonObj[i], null, 2)  
+                  text +=jsobjs;
+                }
+                jsonText.innerHTML = text;
+            })
+            
+      //input color
+            let okColor;
+            inputColor.addEventListener('keyup', function (event) {
                     if (inputColor.value.match(hexColors) !== null) {
                         okColor = true;
                         wtd.innerHTML = "valid color";
+                        addColor.disabled=false;
                     }
-                    else if (inputColor.value == null || inputColor.value == "") {
+                    else if (inputColor.value.match(hexColors) == null || inputColor.value == "") {
                         okColor = false;
+                       
                         wtd.innerHTML = "Not Valid";
+                         addColor.disabled=true;
                     }
+                
                 })
                 // Add Color to list
             addColor.addEventListener('click', function (event) {
@@ -41,7 +63,7 @@ window.addEventListener('load', function (event) {
                         newOption.innerHTML = userHex;
                         selectColor.appendChild(newOption);
                         wtd.innerHTML = "Color Added To List";
-                        okColor = false;
+                        
                     }
                     else {
                         wtd.innerHTML = "NO NO NO"
@@ -94,12 +116,13 @@ window.addEventListener('load', function (event) {
                             context.closePath();
                             context.stroke();
                             wtd.innerHTML = "There you go!";
-                            /*gordon.push({ x1: x1, y1: y1, x2: x2, y2: y2, x3: x3, y3: y3 });
-                            let b = JSON.stringify(gordon, null, 2)*/
+
+                            jsonObj.push({ x1: x1, y1: y1, x2: x2, y2: y2, x3: x3, y3: y3 });
                         }
                     });
                 }
-                // Draw Rectangle
+            
+            // Draw Rectangle
             let dr = document.getElementById('dr');
             dr.addEventListener('click', function (event) {
                 drawR();
@@ -126,11 +149,13 @@ window.addEventListener('load', function (event) {
                             context.rect(x1, y1, x2 - x1, y2 - y1);
                             context.stroke();
                             wtd.innerHTML = "There you go!";
+                            jsonObj.push({ x1: x1, y1: y1, x2: x2, y2: y2});
                         }
                     })
                 }
                 // Draw Circle
             let dc = document.getElementById('dc');
+           
             dc.addEventListener('click', function (event) {
                 drawC();
             });
@@ -157,6 +182,7 @@ window.addEventListener('load', function (event) {
                             context.arc(x1, y1, r, 0, 2 * Math.PI);
                             context.stroke();
                             wtd.innerHTML = "There you go!";
+                            jsonObj.push({ x1: x1, y1: y1, x2: x2, y2: y2});
                         }
                     })
                 }
@@ -173,8 +199,14 @@ window.addEventListener('load', function (event) {
                 let wtd = document.getElementById('wtd');
                 wtd.innerHTML = "Done!"
             })
+            
+            //cancel drawing
             let cd = document.getElementById('cd');
-
+            
+             cd.addEventListener('mouseover', function(event){
+                wtd.innerHTML ="Click to cancel drawing";
+            });        
+    
             function cancelBtn(funC) {
                 cd.addEventListener('click', function (event) {
                     canvas.removeEventListener('click', funC);
